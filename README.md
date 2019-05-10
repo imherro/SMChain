@@ -1,8 +1,8 @@
 # SMChain
 A Block Chain Using SM National Secret Algorithmss
-## Hyperledger Fabric Chinese version
+## SMChain Chinese version
 
-* The Hyperledger Fabric supporting the national reglementation algorithm, the version of the Hyperledger Fabric is 1.4.0
+* SMChain supporting the national reglementation algorithm
 
 ### Compiler Environment
 ---
@@ -24,7 +24,7 @@ A Block Chain Using SM National Secret Algorithmss
 
 * cd $GOPATH/src/github.com/hyperledger
 
-* git clone http://47.93.63.191:81/bqjc/fabric-gm
+* git clone the source code
 
 * Start agent tool brook:
 
@@ -40,7 +40,7 @@ A Block Chain Using SM National Secret Algorithmss
   export https_proxy=http://${proxy ip}:${proxy port}
   ```
 
-* cd $GOPATH/src/github.com/hyperledger/fabric-gm
+* cd $GOPATH/src/github.com/hyperledger/fabric
 
   ```
   make docker
