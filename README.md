@@ -1,12 +1,12 @@
 
-## Hyperledger Fabric国密版
+## SMChain
 
-* 支持国密算法的Hyperledger Fabric,其中Hyperledger Fabric的版本为1.4.0
+* The SMChain supporting the national reglementation algorithm
 
-### 编译环境
+### Compiler Environment
 ---
 
-* 阿里云或华为云云主机及ubuntu16.04.5 64-bit操作系统
+* Alibaba Cloud or Huawei cloud host and ubuntu16.04.5 64-bit operating system
 
 * docker ce >= 18.06.1-ce
 
@@ -16,22 +16,22 @@
 
 * brook >= 20190401
 
-### 编译步骤
+### Compilation step
 ---
 
-* 在$GOPATH目录下执行命令：mkdir $GOPATH/src/github.com/hyperledger
+* Execute commands in the $GOPATH directory：mkdir $GOPATH/src/github.com/hyperledger
 
 * cd $GOPATH/src/github.com/hyperledger
 
-* git clone http://47.93.63.191:81/bqjc/fabric-gm
+* git clone the source code
 
-* 启动代理工具brook:
+* Start agent tool brook:
 
   ```
   brook client -l 127.0.0.1:8080 -i 127.0.0.1 -s server_address:port -p password --http
   ```
 
-* 设置代理环境变量如下:（如果主机可直接访问golang.org跳过此步骤）
+* Set the proxy environment variable as follows: (If the host can directly access golang.org skip this step)
 
   ```
   export http_proxy=http://${proxy ip}:${proxy prot}
@@ -39,11 +39,11 @@
   export https_proxy=http://${proxy ip}:${proxy port}
   ```
 
-* cd $GOPATH/src/github.com/hyperledger/fabric-gm
+* cd $GOPATH/src/github.com/hyperledger/SMChain
 
   ```
   make docker
 
   make native
   ```
-  (**注意**，make docker的时候最后会报错，不影响使用)
+(**Note**, make docker will report an error at the end, but it does not affect the use)
