@@ -1,7 +1,7 @@
 
 ## SMChain
 
-* The SMChain supporting the national reglementation algorithm
+* A Block Chain Using SM National Secret Algorithms
 
 ### Compiler Environment
 ---
