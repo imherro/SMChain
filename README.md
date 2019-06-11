@@ -14,8 +14,6 @@
 
 * golang >= go1.12.2
 
-* brook >= 20190401
-
 ### Compilation step
 ---
 
@@ -25,19 +23,6 @@
 
 * git clone the source code
 
-* Start agent tool brook:
-
-  ```
-  brook client -l 127.0.0.1:8080 -i 127.0.0.1 -s server_address:port -p password --http
-  ```
-
-* Set the proxy environment variable as follows: (If the host can directly access golang.org skip this step)
-
-  ```
-  export http_proxy=http://${proxy ip}:${proxy prot}
-
-  export https_proxy=http://${proxy ip}:${proxy port}
-  ```
 
 * cd $GOPATH/src/github.com/hyperledger/SMChain
 
